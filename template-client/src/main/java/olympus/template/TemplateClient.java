@@ -15,14 +15,8 @@ public class TemplateClient extends AbstractClient {
 
     private static final String SERVICE_NOTIFICATION_HEADER = "template_notification_header";
 
-    protected TemplateClient(MessagingService service, ServiceInstance hostService, NotificationHandler notificationHandler) {
-        super(OlympusService.BLACK_HOLE, new JSONSerializer(), hostService);
-        this.notificationHandler = notificationHandler;
-        service.addClient(this);
-    }
-
-    public TemplateClient(MessagingService service, ServiceInstance hostService, ResponseTracker tracker, NotificationHandler notificationHandler) {
-        super(OlympusService.BLACK_HOLE, new JSONSerializer(), hostService, tracker);
+    public TemplateClient(MessagingService service, NotificationHandler notificationHandler) {
+        super(OlympusService.BLACK_HOLE, new JSONSerializer(), service);
         this.notificationHandler = notificationHandler;
         service.addClient(this);
     }
