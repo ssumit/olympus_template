@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/olympus_template.iml" filepath="$PROJECT_DIR$/.idea/olympus_template.iml" />
       <module fileurl="file://$PROJECT_DIR$/template-client/template-client.iml" filepath="$PROJECT_DIR$/template-client/template-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/template-server/template-server.iml" filepath="$PROJECT_DIR$/template-server/template-server.iml" />
     </modules>
   </component>
 </project>

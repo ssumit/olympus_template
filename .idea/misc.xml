@@ -7,6 +7,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/template-client/pom.xml" />
+        <option value="$PROJECT_DIR$/template-server/pom.xml" />
       </list>
     </option>
   </component>

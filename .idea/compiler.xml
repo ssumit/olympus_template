@@ -31,10 +31,18 @@
         <processorPath useClasspath="true" />
         <module name="template-client" />
       </profile>
+      <profile default="false" name="Annotation profile for template-server" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="template-server" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="template-client" target="${compilerSourceVersion}" />
       <module name="template-interface" target="1.5" />
+      <module name="template-server" target="${compilerSourceVersion}" />
     </bytecodeTargetLevel>
   </component>
 </project>
