@@ -1,5 +1,11 @@
 package olympus.template.server;
 
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+import com.google.inject.Module;
+import com.google.inject.Stage;
+import org.apache.commons.lang.time.StopWatch;
+
 public class TemplateServer {
     public static void main(final String[] args) throws Exception {
         try {
@@ -17,11 +23,13 @@ public class TemplateServer {
     }
 
     public static void start(Module module) {
+/*
         StopWatch stopWatch = StopWatch.createAndStart();
         log.warn("Starting Atropos ...");
         java.security.Security.setProperty("networkaddress.cache.ttl", TTL_SECONDS);
         Injector injector = Guice.createInjector(Stage.PRODUCTION, module);
         injector.getInstance(BootStrapper.class);
         log.warn("Atropos started in " + stopWatch.stop() + " seconds");
+*/
     }
 }

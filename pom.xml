@@ -116,7 +116,7 @@
                     <noqualifier>all</noqualifier>
                     <includeDependencySources>true</includeDependencySources>
                     <dependencySourceIncludes>
-                        <dependencySourceInclude>olympus:kuber-interface</dependencySourceInclude>
+                        <dependencySourceInclude>olympus:template-client</dependencySourceInclude>
                         <dependencySourceInclude>olympus:proteus-annotations</dependencySourceInclude>
                     </dependencySourceIncludes>
                 </configuration>
@@ -135,10 +135,6 @@
             <name>Olympus Snapshot Repository</name>
             <url>http://ci.aws.talk.to:8081/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
-        <site>
-            <id>website</id>
-            <url>http://talk-to.github.io/kuber</url>
-        </site>
     </distributionManagement>
 
     <repositories>
